@@ -1,0 +1,44 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F6F6;
+}
+
+nav{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    border-bottom: 1px solid #E31837;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+
+nav ul li a{
+    padding: 8px 0;
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: #000000;
+    font-weight: 550;
+    transition: all;
+    transition-duration: 150ms;
+}
+
+nav div img{
+    width: 50px;
+    height: 50px;
+}
+
+nav ul li a:hover {
+    color: #E31837;
+    border-bottom: 2px solid #E31837;
+}
