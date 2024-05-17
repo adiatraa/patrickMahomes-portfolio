@@ -52,7 +52,7 @@ nav ul li a:hover {
 }
 
 .shortIntro{
-    margin-top: -38.5%;
+    margin-top: -36.5%;
     width: 600px;
     margin-left: 50%;
     text-align: end;
@@ -262,4 +262,9 @@ nav ul li a:hover {
 .tab-btn:hover{
     background: white;
     color: #E31837;
+}
+
+.achievement{
+    margin-top: 850px;
+    height: 93.3vh;
 }
