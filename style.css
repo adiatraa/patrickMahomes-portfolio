@@ -9,9 +9,9 @@
     scroll-behavior: smooth;
 }
 
-body{
+/* body{
     overflow: hidden;
-}
+} */
 
 nav{
     top: 0;
@@ -52,28 +52,50 @@ nav ul li a:hover {
     border-bottom: 2px solid #E31837;
 }
 
-.cover{
-    margin-top: 77px;
-    display: block;
-    width: 100%;
-    height: calc(100vh);
-    background: linear-gradient(to bottom, #E31837 0%, #E31837 38%, #e21836dc 0%, #e21836dc 60%);
+/* Hero */
+.hero{
+    /* height: 100vh; */
+    position: relative;
 }
 
-.cover-flex {
-    height: 100%;
+.color1{
+    position: relative;
+    height: 45vh;
+    background-color: #E31837;
+}
+
+.color2{
+    position: relative;
+    height: 65vh;
+    background-color: #e21836dc;
+}
+
+.imgHero{
+    position: absolute;
+    z-index: 1;
+    bottom: -4px;
+    left: 90px;
+    /* top: 60%;
+    transform: translate(0, -50%); */
+}
+
+.textHero{
+    position: absolute;
+    left: 60%;
+}
+.sect-top{
+    bottom: 0;
+}
+
+.grid{
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.shortIntro{
-    grid-column: span 5 / span 5;
-    margin: auto 0;
+.col-span-6{
+    grid-column: span 6 / span 6;
 }
-
-.img-intro{
-    grid-column: span 7 / span 7;
-}
+/* Hero */
 
  .coverP1 {
     font-family: "Glosa W01 Roman";
@@ -86,22 +108,10 @@ nav ul li a:hover {
     color: rgba(255, 255, 255, 0.751);
 }
 
-.shortIntro h1{
-    color: rgba(255, 255, 255, 0.751);
-    font-family: "Glosa W01 Black";
-    font-size: 100px;
-    line-height: 1.1;
-}
-
 #mahomes-covername{
     color: white;
+    font-size: 100px;
     padding-bottom: 20px;
-}
-
-.coverPict{
-    width: 685px;
-    left: 80px;
-    bottom: 0;
 }
 
 .btn{
@@ -154,53 +164,85 @@ nav ul li a:hover {
     box-shadow: 0 0 1rem white;
 }
 
-/* .about-me{
-    margin-top: 350px;
-    height: 93.3vh;
-} */
+
+/* Hero */
+
+/* About Me */
+
+.about-me{
+    
+}
+
+.card-area{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.img-card{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.card{
+    margin: 0 auto;
+    max-width: 1280px;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: 12px;
+}
+
+.col-span-4{
+    grid-column: span 4 / span 4;
+}
+
+.col-span-8{
+    grid-column: span 8 / span 8;
+    padding: 10px;
+}
 
 .title-p{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     text-align: center;
-    padding: 30px 0;
-    color: #E31837;
+    color: #4B5563;
+    padding: 6px 0px;
 }
 
-.card-container{
-    display: flex;
+.subtitle-p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #4B5563;
     justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card{
-    width: 1350px;
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 3px #ccc;
     display: flex;
-    flex-direction: row;
-    margin: 10px;
+    margin-bottom: 48px;
 }
 
-.card img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+.subtitle-container{
+    justify-content: center;
+    align-items: center;
+    margin: 96px auto 12px;
+    border-radius: 8px;
+    height: 30px;
+    width: 94px;
+    background: #E5E7EB;
 }
 
-.card-content{
-    padding: 16px;
-    width: 50%;
+.button-container{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 12px;
 }
+
 
 #card-title-p{
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 14px 18px;
 }
 
 #card-content-p{
@@ -208,6 +250,7 @@ nav ul li a:hover {
     font-size: 14px;
     padding: 18px;
     text-align: justify;
+    color: #4B5563;
 }
 
 .btn-card{
@@ -231,6 +274,7 @@ nav ul li a:hover {
 
 
 .achievement{
-    margin-top: 850px;
-    height: 93.3vh;
+    margin-top: 96px;
+    background: #F9FAFB;
+    padding-top: 18px;
 }
